@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     min-width: 0;
     margin: 0 auto;
     height: 100%;
-    padding: 10vh 40px;
+    padding: 3vh 40px;
     font-size: 18px;
     
     @media screen and (max-width: 940px)  {
