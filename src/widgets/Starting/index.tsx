@@ -1,10 +1,10 @@
-import { Card } from '@widgets'
+import { CardsLine } from '@widgets'
+import { Div } from './style'
 
 export const Starting = () => {
   return (
-    <>
-      <p>рудд</p>
-      <Card />
-    </>
+    <Div>
+      <CardsLine />
+    </Div>
   )
 }

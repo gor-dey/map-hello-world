@@ -1,61 +1,19 @@
-import { lightGrayColor } from '@shared/cssConstants'
-import styled from 'styled-components'
+import { Data } from '@shared/types'
+import { Address, Contacts, Div, Flag } from './style'
 
-const padding = '24px'
-
-const Div = styled.div`
-  height: 208px;
-  width: 100%;
-  border-radius: 20px;
-  padding: ${padding};
-  box-shadow: 0px 0px 40px 0px #2c3b4026;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-
-  position: relative;
-`
-const Flag = styled.div`
-  width: 40px;
-  height: 40px;
-  background-color: tomato;
-  border-radius: 10px;
-  position: absolute;
-  right: ${padding};
-`
-
-const Name = styled.span`
-  font-size: 28px;
-  font-weight: 700;
-`
-const Contacts = styled.span`
-  font-size: 18px;
-  font-weight: 400;
-
-  display: flex;
-  flex-direction: column;
-`
-const Address = styled.span`
-  color: ${lightGrayColor};
-`
-
-export const Card = () => {
+export const Card = (item: Data) => {
   return (
     <Div>
-      <Name>Damietta</Name>
+      <h2>{item.name}</h2>
 
       <Contacts>
-        <span>+20 0219033</span>
-        <span>alexbank@damietta.com</span>
+        <span>{item.phone}</span>
+        <span>{item.email}</span>
       </Contacts>
 
-      <Address>
-        3 Al Togari, Qism Damietta, Damietta, Damietta Governorate 34511, Egypt
-      </Address>
+      <Address>{item.address}</Address>
 
-      <Flag />
+      <Flag dangerouslySetInnerHTML={{ __html: item.flag }} />
     </Div>
   )
 }
