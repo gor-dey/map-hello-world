@@ -1,10 +1,10 @@
+import { Card } from '@widgets'
+
 export const Starting = () => {
   return (
     <>
-      <h1>This is Main Page</h1>
+      <p>рудд</p>
+      <Card />
     </>
   )
 }
-
-
-

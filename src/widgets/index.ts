@@ -1,4 +1,2 @@
 export * from './Starting'
-export * from './NotFound'
-
-
+export * from './Card'

@@ -1,14 +1,10 @@
-import { RouterProvider } from 'react-router'
-import { RootStoreProvider } from '@shared'
-import { rootStore } from '@shared'
-import { router } from './router'
+import { Layout } from './layout'
+import { StartingPage } from '@pages'
 
 export const App = () => {
   return (
-    <RootStoreProvider rootStore={rootStore}>
-      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
-    </RootStoreProvider>
+    <Layout>
+      <StartingPage />
+    </Layout>
   )
 }
-
-         

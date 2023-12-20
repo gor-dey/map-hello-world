@@ -1,7 +1,11 @@
+import { Title } from '@entities'
 import { Starting } from '@widgets'
 
 export const StartingPage = () => {
-  return <Starting />
+  return (
+    <>
+      <Title />
+      <Starting />
+    </>
+  )
 }
-
-
