@@ -18,6 +18,7 @@ export const Flex = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     flex-wrap: nowrap;
+    padding-bottom: calc(2 * ${gap});
 
     & > div {
       box-sizing: border-box;
